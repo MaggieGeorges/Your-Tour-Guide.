@@ -1,0 +1,57 @@
+[   
+    {
+        "id": "dest-1",
+        "name": "Maasai Mara National Reserve",
+        "imageUrl": "/public/images/maasai-mara1.jpg"
+      },
+      {
+        "id": "dest-2",
+        "name": "Serengeti National Park",
+        "imageUrl": "/public/images/serengeti.jpg"
+      },
+      {
+        "id": "dest-3",
+        "name": "Kilimanjaro National Park",
+        "imageUrl": "/public/images/kilimanjaro.jpg"
+      },
+      {
+        "id": "dest-4",
+        "name": "Lamu Island",
+        "imageUrl": "/public/images/lamu-island.jpg"
+      },
+      {
+        "id": "dest-5",
+        "name": "Diani Beach",
+        "imageUrl": "/public/images/diani-beach.jpg"
+      },
+    {
+      "id": "dest-6",
+      "name": "Nairobi",
+      "imageUrl": "/public/images/nairobi1.jpg"
+    },
+    {
+      "id": "dest-7",
+      "name": "Kenyan Coast",
+      "imageUrl": "/public/images/coast.jpg"
+    },
+    {
+      "id": "dest-8",
+      "name": "South Rift",
+      "imageUrl": "/public/images/south-rift.jpg"
+    },
+    {
+      "id": "dest-9",
+      "name": "Tsavo National Parks",
+      "imageUrl": "/public/images/tsavo.jpg"
+    },
+    {
+      "id": "dest-10",
+      "name": "Mount Kenya Region",
+      "imageUrl": "/public/images/mount-kenya1.jpg"
+    },
+    {
+      "id": "dest-11",
+      "name": "Lake Nakuru and the North Rift",
+      "imageUrl": "/public/images/lake-nakuru1.jpg"
+    }
+  ]

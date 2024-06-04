@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+  <header>
+    <img src="images/download.png" alt="Logo">
+    <span class="close-btn">X</span>
+    <h1>Login</h1>
+    <br>
+    <p>New Here? Create an Account <a href="register.html">Register</a>.</p>
+  </header>
+  <main>
+    <form id="loginForm">
+      <div class="input-field">
+        <i class="fas fa-envelope"></i>
+        <input type="email" id="email" placeholder="Email" required />
+      </div>
+      <div class="input-field">
+        <i class="fas fa-lock"></i>
+        <input type="password" id="password" placeholder="Password" required />
+      </div>
+      <button type="submit">Login</button>
+      <span>Or sign in with Email or Google:</span>
+      <div class="social-login">
+        <div class="social-icons">
+            <a href="#" aria-label="Sign in with email"><i class="fas fa-envelope"></i></a>
+            <a href="#" aria-label="Sign in with email"><i class="fab fa-google"></i></a>
+        </div>
+    </div>
+    </form>
+   
+  </main>
+  <script src="/Src/Auth/login.js"></script>
+</body>
+</html>

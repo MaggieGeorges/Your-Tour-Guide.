@@ -1,0 +1,494 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed; 
+    width: 100%;
+    top: 0; 
+    left: 0; 
+    z-index: 1000; 
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: whitesmoke;
+}
+
+.logo a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-height: 150px; 
+    width: auto;
+    background-color: #ccc;
+    color: #ddd;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    margin-left: 1rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s;
+}
+
+.nav-links a:hover {
+    background: #f4f4f4;
+    border-radius: 4px;
+}
+
+.login-button {
+    background: grey;
+    color: #fff;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s;
+}
+
+.login-button:hover {
+    background: darkgrey;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn-service {
+    background: #f25d50;
+    color: #fff;
+    padding: 0.75rem 2rem;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.btn-service:hover {
+    background: #d04a3d;
+}
+
+/* Spacer for Fixed Header */
+.spacer {
+    height: 100px;
+}
+
+/* Section Styles */
+section {
+    padding: 20px;
+}
+
+/* Featured Tours Styles */
+#featured-tours {
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+#featured-tours h2 {
+    margin-bottom: 20px;
+}
+
+.tour-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.tour-box {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    display: flex; 
+    flex-direction: column;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.tour-box img {
+    max-width: 100%; 
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px; 
+}
+
+.tour-details {
+    flex-grow: 1;
+}
+
+.location {
+    font-size: 0.9rem;
+    color: #999;
+    margin-bottom: 5px;
+}
+
+.tour-name {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.reviews,
+.duration,
+.price {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color: #999;
+}
+
+.price {
+    font-weight: bold;
+}
+
+.featured-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: blue;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+
+/* Top Destinations Styles */
+#destinations {
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+#destinations h2 {
+    margin-bottom: 20px;
+}
+
+.destination-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.destination-box {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.destination-box img {
+    max-width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.destination-name {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.destination-description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.destination-button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.destination-button:hover {
+    background-color: #3e8e41;
+}
+
+/* Featured Hotels Styles */
+#featured-hotels {
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+#featured-hotels h2 {
+    margin-bottom: 20px;
+}
+
+.hotel-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.hotel-box {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.hotel-box img {
+    max-width: 100%;
+    height: 150px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.hotel-details {
+    flex-grow: 1;
+}
+
+.location {
+    font-size: 0.9rem;
+    color: #999;
+    margin-bottom: 5px;
+}
+
+.hotel-name {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.reviews,
+.duration,
+.price {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color: #999;
+}
+
+.price {
+    font-weight: bold;
+}
+
+.featured-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: blue;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+
+/* Footer Styles */
+footer {
+    background-color: dimgray;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section a,
+.footer-section ul,
+.footer-section form {
+    margin: 10px 0;
+}
+
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    color: #fff;
+}
+
+.footer-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-section form input,
+.footer-section form button {
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.footer-section form input {
+    background-color: #fff;
+    color: #333;
+}
+
+.footer-section form button {
+    background-color: lightsteelblue;
+    color: #fff;
+    cursor: pointer;
+    width: 100px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+
+/* Login and Register Form Styles */
+main {
+    margin-top: 300px; /* Adjust to avoid overlap with fixed header */
+    text-align: center;
+    padding: 0px;
+    align-items: center;
+    position: relative;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-field {
+    position: relative;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.input-field i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ccc;
+}
+
+input {
+    padding: 10px 30px; 
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 10px 0;
+    width: 26%;
+    box-sizing: border-box;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

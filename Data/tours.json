@@ -1,0 +1,82 @@
+[
+    {
+        "id": "1",
+        "name": "Safari Adventure in Maasai Mara",
+        "location": "Maasai Mara, Kenya",
+        "description": "Experience the thrill of a safari in one of Africa's most famous national reserves. Witness the Big Five and marvel at the stunning landscapes.",
+        "price": 500,
+        "imageUrl": "/public/images/maasai-mara.jpg",
+        "reviews": 25,
+        "duration": "3 days"
+    },
+    {
+        "id": "2",
+        "name": "Cultural Tour of Nairobi",
+        "location": "Nairobi, Kenya",
+        "description": "Explore the vibrant culture and history of Nairobi, including visits to museums, markets, and local communities.",
+        "price": 250,
+        "imageUrl": "/public/images/nairobi.jpg",
+        "reviews": 15,
+        "duration": "2 days"
+    },
+    {
+        "id": "3",
+        "name": "Mount Kenya Hiking Expedition",
+        "location": "Mount Kenya, Kenya",
+        "description": "Embark on a challenging yet rewarding trek to the summit of Mount Kenya, Africa's second-highest mountain.",
+        "price": 800,
+        "imageUrl": "/public/images/mount-kenya.jpg",
+        "reviews": 30,
+        "duration": "5 days"
+    },
+    {
+        "id": "4",
+        "name": "Beach Getaway in Diani",
+        "location": "Diani, Kenya",
+        "description": "Relax on the pristine white sands of Diani Beach and enjoy the crystal-clear waters of the Indian Ocean.",
+        "price": 400,
+        "imageUrl": "/public/images/diani-beach.jpg",
+        "reviews": 20,
+        "duration": "4 days"
+    },
+    {
+        "id": "5",
+        "name": "Cycling Tour of Hell's Gate National Park",
+        "location": "Naivasha, Kenya",
+        "description": "Explore Hell's Gate National Park on a thrilling cycling tour, with opportunities to see wildlife and stunning rock formations.",
+        "price": 300,
+        "imageUrl": "/public/images/hells-gate.jpg",
+        "reviews": 10,
+        "duration": "2 days"
+    },
+    {
+        "id": "6",
+        "name": "Bird Watching Tour in Lake Nakuru",
+        "location": "Lake Nakuru, Kenya",
+        "description": "Discover the rich birdlife of Lake Nakuru, including flamingos, pelicans, and over 400 other bird species.",
+        "price": 350,
+        "imageUrl": "/public/images/lake-nakuru.jpg",
+        "reviews": 18,
+        "duration": "3 days"
+    },
+    {
+        "id": "7",
+        "name": "Camping Safari in Amboseli National Park",
+        "location": "Amboseli, Kenya",
+        "description": "Experience the beauty of Amboseli National Park with a camping safari, offering close encounters with elephants and stunning views of Mount Kilimanjaro.",
+        "price": 600,
+        "imageUrl": "/public/images/amboseli.jpg",
+        "reviews": 22,
+        "duration": "4 days"
+    },
+    {
+        "id": "8",
+        "name": "Rafting Adventure on the Tana River",
+        "location": "Tana River, Kenya",
+        "description": "Challenge yourself with an exhilarating rafting adventure on the Tana River, one of Kenya's most scenic rivers.",
+        "price": 450,
+        "imageUrl": "/public/images/tana-river.jpg",
+        "reviews": 12,
+        "duration": "2 days"
+    }
+]

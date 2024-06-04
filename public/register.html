@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <img src="images/download.png" alt="Logo">
+        <span class="close-btn">X</span>
+        <h1>Register</h1>
+        <br>
+        <p>Already a Member? <a href="login.html">Login</a>.</p>
+    </header>
+    <main class="form-main">
+        <form id="registerForm" method="post">
+            <div class="input-field">
+                <i class="fas fa-user"></i>
+                <input type="text" id="registerUsername" name="username" placeholder="Username" required autocomplete="username">
+            </div>
+            <div class="input-field">
+                <i class="fas fa-envelope"></i>
+                <input type="email" id="registerEmail" name="email" placeholder="Email" required autocomplete="email">
+            </div>
+            <div class="input-field">
+                <i class="fas fa-lock"></i>
+                <input type="password" id="registerPassword" name="password" placeholder="Password" required autocomplete="new-password">
+            </div>
+            <button type="submit">Register</button>
+            <div class="social-login">
+                <span>Or sign up with email or Google:</span>
+                <div class="social-icons">
+                    <a href="#" aria-label="Sign up with email"><i class="fas fa-envelope"></i></a>
+                    <a href="#" aria-label="Sign up with Google"><i class="fab fa-google"></i></a>
+                </div>
+            </div>
+        </form>
+        
+    </main>
+
+    <script src="/Src/Auth/register.js"></script>
+</body>
+</html>
