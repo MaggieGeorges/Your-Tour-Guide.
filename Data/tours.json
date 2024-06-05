@@ -1,4 +1,5 @@
-[
+{
+  "tours": [
     {
         "id": "1",
         "name": "Safari Adventure in Maasai Mara",
@@ -79,4 +80,5 @@
         "reviews": 12,
         "duration": "2 days"
     }
-]
+  ]
+}

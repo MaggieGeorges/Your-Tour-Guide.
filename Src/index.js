@@ -49,12 +49,33 @@ class TourService {
                     <div class="price">from $${tour.price.toFixed(2)}</div>
                 </div>
             `;
+                const bookButton = document.createElement('button');
+                bookButton.textContent = 'Book Now';
+                bookButton.classList.add('book-now-btn');
+                bookButton.addEventListener('click', () => {
+                    if (localStorage.getItem('loggedInUser')) {
+                        window.location.href = `bookings.html?tourId=${tour.id}`;
+                    }
+                    else {
+                        alert('Please log in to book a tour.');
+                        window.location.href = 'login.html';
+                    }
+                });
+                tourBox.appendChild(bookButton);
                 tourGrid.appendChild(tourBox);
             });
             // Append the heading before the tourGridContainer
             toursContainer === null || toursContainer === void 0 ? void 0 : toursContainer.appendChild(heading);
             toursContainer === null || toursContainer === void 0 ? void 0 : toursContainer.appendChild(tourGridContainer);
             tourGridContainer.appendChild(tourGrid);
+            // Add event listener for "Book Now" buttons
+            document.querySelectorAll('.book-now-btn').forEach(button => {
+                button.addEventListener('click', (event) => {
+                    const target = event.target;
+                    const tourId = target.getAttribute('data-tour-id');
+                    window.location.href = `bookings.html?tourId=${tourId}`;
+                });
+            });
         });
     }
 }
@@ -93,6 +114,13 @@ class DestinationService {
             destinationsContainer === null || destinationsContainer === void 0 ? void 0 : destinationsContainer.appendChild(destinationGridContainer);
             destinationGridContainer.appendChild(destinationGrid);
         });
+    }
+    renderStarRating(starRating) {
+        let stars = '';
+        for (let i = 0; i < starRating; i++) {
+            stars += '⭐';
+        }
+        return stars;
     }
 }
 const destinationService = new DestinationService();
@@ -136,6 +164,8 @@ class HotelService {
                     <div class="star-rating">
                         ${this.renderStarRating(hotel.starRating)}
                     </div>
+                    <div class="price">from $${hotel.price.toFixed(2)}</div>
+                    <button class="book-now-btn" data-tour-id="${hotel.id}">Book Now</button>
                 </div>
             `;
                 hotelGrid.appendChild(hotelBox);

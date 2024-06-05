@@ -3,10 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Tours Guide</title>
+    <title>Bookings</title>
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
 </head>
 <body>
     <header>
@@ -15,17 +13,13 @@
                 <a href="#"><img src="/public/images/download.png" alt="Your Tours Guide Logo"></a>
             </div>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="tours.html">Tours</a></li>
-                <li><a href="hotels.html">Hotels</a></li>
+                <li><a href="/public/index.html">Home</a></li>
                 <li><a href="bookings.html">Bookings</a></li>
-                <li><a href="contact.html">Contact</a></li>
                 <li><a href="/public/login.html"class="login-button">Login</a></li>
             </ul>
         </nav>
     </header>
-    <div class="spacer"></div>
+    
     <section class="hero">
         <img src="./images/img4.jpg" alt="Banner Image">
         <div class="hero-content">
@@ -34,23 +28,29 @@
             <a href="#" class="btn-service">Service</a>
         </div>
     </section>
-    <section id="search-bar">
-        <form>
-            <input type="search" id="search-input" placeholder="Search for tours...">
-            <button id="search-button" type="button">Search</button>
+    <main>
+        <h1>Book Your Tour</h1>
+        <form id="booking-form">
+            <label for="user">User:</label>
+            <input type="text" id="user" name="user" required>
+            
+            <label for="tour">Tour:</label>
+            <input type="text" id="tour" name="tour" required >
+            
+            <label for="hotel">Hotel:</label>
+            <input type="text" id="hotel" name="hotel" required>
+            
+            <label for="booking-date">Booking Date:</label>
+            <input type="date" id="booking-date" name="booking-date" required>
+
+            <label for="number-of-people">Number of People:</label>
+            <input type="number" id="number-of-people" min="1">
+
+            
+            <button type="submit">Book Now</button>
         </form>
-    </section>
-    <section id="featured-tours">
-        <div class="tour-grid">
-            <!-- Tour items will be dynamically added here -->
-        </div>
-    </section>
-    <section id="top-destinations">
-        
-    </section>
-    <section id="featured-hotels">
-        <!-- Featured section content here -->
-    </section>
+    </main>
+
     <footer>
         <div class="footer-container">
             <div class="footer-section">
@@ -65,7 +65,6 @@
                 <a href="https://twitter.com" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                 <a href="https://instagram.com" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
             </div>
-            
             <div class="footer-section">
                 <h3>Quick Links</h3>
                 <ul>
@@ -86,8 +85,7 @@
             <p>&copy; 2024 Margaret Mburu. All rights reserved.</p>
         </div>
     </footer>
-    
-</body>
-<script src="../Src/index.js"></script>
 
+    <script src="../Src/bookings.js"></script>
+</body>
 </html>

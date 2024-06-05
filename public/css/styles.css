@@ -451,6 +451,7 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 0px;
 }
 
 .input-field {
@@ -491,4 +492,74 @@ button {
 
 button:hover {
     background-color: #0056b3;
+}
+
+
+/* Styling for the booking Form */
+/* Main content */
+main {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 300px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color:#0056b3;
+}
+
+form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form input[type="date"] {
+    padding: 7px;
+}
+
+form button {
+    padding: 10px;
+    border: none;
+    background-color: #0056b3;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #575757;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    main {
+        width: 90%;
+        padding: 10px;
+    }
+
+    form {
+        padding: 10px;
+    }
 }

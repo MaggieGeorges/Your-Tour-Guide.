@@ -1,59 +1,68 @@
-[
-    {
-        "id": "hotel-1",
-        "name": "The Fairmont The Norfolk",
-        "location": "Nairobi",
-        "starRating": 5,
-        "imageUrl": "/public/images/Norfolk.jpg"
-    },
-    {
-        "id": "hotel-2",
-        "name": "The Safari Park Hotel",
-        "location": "Nairobi",
-        "starRating": 4,
-        "imageUrl": "/public/images/Safari Park Safari Park Hotel.jpg"
-    },
-    {
-        "id": "hotel-3",
-        "name": "The Giraffe Manor",
-        "location": "Nairobi",
-        "starRating": 4,
-        "imageUrl": "/public/images/The Giraffe Manor.jpg"
-    },
-    {
-        "id": "hotel-4",
-        "name": "The Lake Nakuru Lodge",
-        "location": "Lake Nakuru",
-        "starRating": 4,
-        "imageUrl": "/public/images/lakenakurulodge.jpg"
-    },
-    {
-        "id": "hotel-5",
-        "name": "The Amboseli Serena Safari Lodge",
-        "location": "Amboseli",
-        "starRating": 5,
-        "imageUrl": "/public/images/Serena Safari Lodge - Amboseli, Kenya.jpg"
-    },
-    {
-        "id": "hotel-6",
-        "name": "The Samburu Intrepids",
-        "location": "Samburu",
-        "starRating": 4,
-        "imageUrl": "/public/images/samburu.jpg"
-    },
-    {
-        "id": "hotel-7",
-        "name": "The Maasai Mara Serena Safari Lodge",
-        "location": "Maasai Mara",
-        "starRating": 5,
-        "imageUrl": "/public/images/maasaimara.jpg"
-    },
-    {
-        "id": "hotel-8",
-        "name": "The Diani Beach Resort",
-        "location": "Diani Beach",
-        "starRating": 4,
-        "imageUrl": "/public/images/dianibeach.jpg"
-    }
-    
-]
+{
+    "hotels": [
+        {
+            "id": "hotel-1",
+            "name": "The Fairmont The Norfolk",
+            "location": "Nairobi",
+            "starRating": 5,
+            "price": 350,
+            "imageUrl": "/public/images/Norfolk.jpg"
+        },
+        {
+            "id": "hotel-2",
+            "name": "The Safari Park Hotel",
+            "location": "Nairobi",
+            "starRating": 4,
+            "price": 300,
+            "imageUrl": "/public/images/Safari Park Safari Park Hotel.jpg"
+        },
+        {
+            "id": "hotel-3",
+            "name": "The Giraffe Manor",
+            "location": "Nairobi",
+            "starRating": 4,
+            "price": 250,
+            "imageUrl": "/public/images/The Giraffe Manor.jpg"
+        },
+        {
+            "id": "hotel-4",
+            "name": "The Lake Nakuru Lodge",
+            "location": "Lake Nakuru",
+            "starRating": 4,
+            "price": 100,
+            "imageUrl": "/public/images/lakenakurulodge.jpg"
+        },
+        {
+            "id": "hotel-5",
+            "name": "The Amboseli Serena Safari Lodge",
+            "location": "Amboseli",
+            "starRating": 5,
+            "price": 150,
+            "imageUrl": "/public/images/Serena Safari Lodge - Amboseli, Kenya.jpg"
+        },
+        {
+            "id": "hotel-6",
+            "name": "The Samburu Intrepids",
+            "location": "Samburu",
+            "starRating": 4,
+            "price": 250,
+            "imageUrl": "/public/images/samburu.jpg"
+        },
+        {
+            "id": "hotel-7",
+            "name": "The Maasai Mara Serena Safari Lodge",
+            "location": "Maasai Mara",
+            "starRating": 5,
+            "price": 300,
+            "imageUrl": "/public/images/maasaimara.jpg"
+        },
+        {
+            "id": "hotel-8",
+            "name": "The Diani Beach Resort",
+            "location": "Diani Beach",
+            "starRating": 4,
+            "price": 500,
+            "imageUrl": "/public/images/dianibeach.jpg"
+        }
+    ]
+}

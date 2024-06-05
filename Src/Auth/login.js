@@ -8,12 +8,12 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-class login {
+class Login {
     constructor() {
-        this.loginform = document.getElementById('loginForm');
+        this.loginForm = document.getElementById('loginForm');
         this.closeButton = document.querySelector('.close-btn');
-        if (this.loginform) {
-            this.loginform.addEventListener('submit', this.handleSubmit.bind(this));
+        if (this.loginForm) {
+            this.loginForm.addEventListener('submit', this.handleSubmit.bind(this));
         }
         if (this.closeButton) {
             this.closeButton.addEventListener('click', this.handleClose.bind(this));
@@ -32,7 +32,7 @@ class login {
                 return;
             }
             if (password === '') {
-                alert('Username is required.');
+                alert('Password is required.');
                 return;
             }
             try {
@@ -40,18 +40,18 @@ class login {
                 const users = yield response.json();
                 const user = users.find((user) => user.email === email && user.password === password);
                 if (user) {
-                    const user = users[0];
                     console.log('User authenticated:', user);
-                    localStorage.setItem('userDetails', JSON.stringify(user));
+                    // Store the logged-in user details in localStorage
+                    localStorage.setItem('loggedInUser', JSON.stringify(user));
                     window.location.href = '/public/index.html';
                 }
                 else {
-                    alert('Invalid username or password.');
+                    alert('Invalid email or password.');
                 }
             }
             catch (error) {
-                console.error('Error Logging in:', error);
-                alert('An error has occured while logging in. Please try again later.');
+                console.error('Error logging in:', error);
+                alert('An error occurred while logging in. Please try again later.');
             }
         });
     }
@@ -60,4 +60,4 @@ class login {
         window.location.href = '/public/index.html';
     }
 }
-new login();
+new Login();
